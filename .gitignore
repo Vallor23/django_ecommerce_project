@@ -1,0 +1,4 @@
+.env
+shopsyenv/
+__pycache__/
+*.pyc
