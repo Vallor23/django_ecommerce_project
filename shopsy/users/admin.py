@@ -7,14 +7,14 @@ from users.models import User
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     fieldsets = (
-        ('Additional Info', {'fields':('city', 'state', 'address', 'phone')}),
+        ('Additional Info', {'fields':('phone',)}),
     )
 
     add_fieldsets = (
         (None, {
             'classes': ('wide'),
-            'fields': ('username', 'email', 'password1', 'password2', 'city', 'state', 'address', 'phone')
+            'fields': ('username', 'email', 'password1', 'password2', 'phone')
         }),
     )
 
-    list_display = ('username', 'email', 'city', 'phone', 'is_staff')
+    list_display = ('username', 'email', 'phone', 'is_staff')
