@@ -13,11 +13,13 @@ export default function Home() {
         <div className="min-h-screen bg-white flex flex-col sticky top-0 z-50 text-gray-900">
             <header className="w-full">
                 {/* Top bar */}
-                <div className="max-w-7xl mx-auto flex items-center justify-between bg-gray-900 text-gray-300 h-6 md:h-8 text-sm px-4">
-                    <div className="">CAD</div>
-                    <div className="space-x-4">
-                        <Link to="/login" className="hover:text-white">Sign in</Link>
-                        <Link to="/register" className="hover:text-white">Create an account</Link>
+                <div className="  bg-gray-900">
+                    <div className="max-w-7xl mx-auto flex items-center justify-between text-gray-300 h-6 md:h-8 text-sm px-4">
+                        <div className="">CAD</div>
+                        <div className="space-x-4">
+                            <Link to="/login" className="hover:text-white">Sign in</Link>
+                            <Link to="/register" className="hover:text-white">Create an account</Link>
+                        </div>
                     </div>
                 </div>
 
