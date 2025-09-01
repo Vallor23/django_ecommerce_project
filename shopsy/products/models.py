@@ -7,7 +7,7 @@ class Product(models.Model):
         ( "electronics", "Electronics"),
         ("fashion", "Fashion"),
         ("beauty", "Beauty"),
-        ("home&living", "Home & Living")
+        ("home & living", "Home & Living")
     )
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=10, decimal_places=2, validators=[MinValueValidator(0)])
